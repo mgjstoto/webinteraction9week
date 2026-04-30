@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://font.elice.io/css?family=Elice+Digital+Coding" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+		body,h1,h2,h3,p{margin:0; padding: 0}	
+		.contents{width:800px; margin:auto;}
+		.center{text-align: center;}
+		.bgblack{background: black;}
+		.white{color: white;}
+		.black{color: black;}
+		.pink{color:#FF00DD;}
+		.img-wrap{position: relative;}
+		.img-wrap img {width: 100%; display: block;}
+		.img-wrap .blink {width: 9.3%; display: block;}
+		.img-wrap .blur {width: 10%; display: block;}
+
+		.blur{ position: absolute;
+			    top: 49.65%;
+			    left: 67.5%;}
+
+		/*section1*/
+		.txt-wrap{position: absolute;top:23.94%; line-height: 0.9; font-size: 3vw; left: 23%}
+		.txt-wrap2{position: absolute;top:32.62%; line-height: 1.05; font-size: 3.25vw; left: 54.9%}
+		.txt-wrap3{position: absolute;top:36.2%; line-height: 1.05; font-size: 3.25vw; left: 67%}
+		.txt-wrap4{position: absolute;top:43.3%; line-height: 1.1; font-size: 3.25vw; left: 67.5%}
+		.txt-wrap5{position: absolute;top:49.65%; line-height: 1.1; font-size: 3.25vw; left: 44.3%; transform: rotate(-66deg);letter-spacing: 2.58rem; font-weight: bold;}
+		.txt-wrap6{position: absolute;top:56.17%; line-height: 1.1; font-size: 3.25vw; left: 26%; transform: rotate(-13.2deg); letter-spacing: 2.58rem; font-weight: bold;}
+		.txt-wrap7{position: absolute;top:65.98%; line-height: 1.21; font-size: 3.25vw; left: 63.5%;}
+		.txt-wrap8{position: absolute;top:76.79%; line-height: 1.18; font-size: 3.25vw; left: 38.9%;font-weight: bold;}
+		.linetest{position: absolute;top:79.7%; line-height: 1.18; font-size: 3.25vw; left: 11%;font-weight: bold;}
+
+		/*section2*/
+		.txt-wrap21{position: absolute;top:7.5%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap22{position: absolute;top:7.9%; line-height: 1.05; font-size: 3.25vw; left:20.89%}
+		.txt-wrap23{position: absolute;top:8.29%; line-height: 1.05; font-size: 3.25vw; left:25.3%}
+		.txt-wrap24{position: absolute;top:8.67%; line-height: 1.05; font-size: 3.25vw; left: 30.15% ;font-weight: bold;}
+		.txt-wrap25{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap26{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap27{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap28{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap29{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+		.txt-wrap210{position: absolute;top:9%; line-height: 1.05; font-size: 3.25vw; left:16.75%}
+
+
+
+		/*font*/
+		.coding-font {font-family: 'Elice Digital Coding', bold;}
+		.noto-sans-kr-<uniquifier> {
+		  font-family: "Noto Sans KR", sans-serif;
+		  font-optical-sizing: auto;
+		  font-weight: <weight>;
+		  font-style: normal;
+		}
+
+
+		/*animation*/
+		@keyframes blink {
+		   0%   { opacity: 1; }
+		   40%  { opacity: 1; } 
+		   50%  { opacity: 0; } 
+		   60%  { opacity: 1; } 
+		   100% { opacity: 1; }
+			}
+			.blink {
+			    position: absolute;
+			    top: 2.5%;
+			    left: 65%;
+			    animation: blink 1s infinite;
+				}
+
+		.scroll-motion {
+			    position: absolute;
+			    top: 51%;        
+			    left: 34.8%;
+			    opacity: 100;         
+			    transform: rotate(-66deg) translateX(700px) translateY(-50px);  
+			    transition: opacity 0.6s ease, transform 2s ease;  
+			}
+
+					
+		.scroll-motion.active {
+		    opacity: 1;
+		    transform: rotate(-66deg) translateX(0px)  translateY(0px);  
+			}
+
+
+		.letter-motion {
+		    letter-spacing: 0rem;       
+		    opacity: 0;
+		    transition: letter-spacing 1s ease, opacity 0.6s ease;
+			}
+
+		
+		.letter-motion.active {
+		    letter-spacing: 2.58rem;   
+		    opacity: 1;
+		}
+
+		.line-motion {
+		    position: absolute;
+		    background-color: #FF00DD;
+		    width: 65%;               
+		    height: 0.05%;                
+		    opacity: 1;              
+		    transform-origin: left;
+		    transform: rotate(27deg) scaleX(0);
+		    transition: transform 1.5s ease, opacity 0.5s ease; 
+		    
+		    
+		    top: 79.75%; 
+		    left: 11%;
+		}
+
+		
+		.line-motion.active {
+		             
+		    opacity: 1;
+		    transform: rotate(27deg) scaleX(1)
+		}
+
+
+
+		.line-motion2 {
+		    position: absolute;
+		    background-color: #00FF26;  
+		    width: 65%;               
+		    height: 0.05%;               
+		    opacity: 1;               
+		    transform-origin: right;
+		    transform: rotate(-41.7deg) scaleX(0);
+		    transition: transform 1.5s ease, opacity 0.5s ease; 
+		    
+		    
+		    top: 94.67%; 
+		    left: 7.5%;
+		}
+
+		
+		.line-motion2.active {
+		              
+		    opacity: 1;
+		    transform: rotate(-41.7deg) scaleX(1)
+		}
+
+	</style>	
+	<title>웹인터</title>
+</head>
+	<script>
+	    window.addEventListener('scroll', () => {
+	        const elements = document.querySelectorAll('.scroll-motion');
+	        elements.forEach(el => {
+	            const rect = el.getBoundingClientRect();
+	            if (rect.top < window.innerHeight * 0.8) {
+	                el.classList.add('active');
+	            }
+	        });
+	    });
+	</script>
+	<script>
+		window.addEventListener('scroll', () => {
+    document.querySelectorAll('.letter-motion, .line-motion, .line-motion2').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.8) {
+            el.classList.add('active');
+        }
+    });
+});
+	</script>
+<body>
+	<section class="">
+		<div class="img-wrap">
+				<img src="section1-notext.png">
+				<img src="blinkdot1.png" class="blink">
+				<img src="blur1.png" class="blur line-motion">
+			<div class="txt-wrap coding-font" >
+				<h2>FOLLOW<br>THE<br>BALL!</h2>
+			</div>
+			<div class="txt-wrap2 white">
+				<p>나<br>를</p>
+			</div>
+			<div class="txt-wrap3 white">
+				<p>따<br>라<br>와<br>요<br> !</p>
+			</div>
+			<div class="txt-wrap4 white">
+				 <p>나는</p>
+			</div>
+			<div class="txt-wrap5 scroll-motion pink">
+			    <p>이렇게</p>
+			</div>
+			<div class="txt-wrap6 letter-motion white">
+				<p>늘어날 수도</p>
+			</div>
+			<div class="txt-wrap7 black">
+				<p>많<br>은<br>것<br>들<br>을</p>
+			</div>
+			<div class="txt-wrap8 pink">  
+				<p>이<br>을<br>수<br>도</p>
+			</div>
+			<div class="line-motion">
+				
+			</div>
+			<div class="line-motion2">
+				
+			</div>
+		</div>		
+	</section>
+	<section>
+
+		
+	</section>
+	<section></section>
+	<section></section>
+	<section></section>
+
+</body>
+</html>
